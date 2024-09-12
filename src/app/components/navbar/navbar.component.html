@@ -1,0 +1,13 @@
+<div class="flex justify-between items-center h-[16vh]">
+    <span class="text-2xl zain-bold cursor-pointer">godinez<span class="bg-gradient-to-tr from-indigo-500 to-purple-500 inline-block text-transparent bg-clip-text font-bold zain-bold">.dev</span></span>
+    <div class="flex my-card px-12 py-2 gap-12 rounded-xl">
+        <span class="text-sm courier-prime-bold cursor-pointer"><span class="bg-gradient-to-tr from-indigo-500 to-purple-500 inline-block text-transparent bg-clip-text text-base">/</span>about-me</span>
+        <span class="text-sm courier-prime-bold cursor-pointer"><span class="bg-gradient-to-tr from-indigo-500 to-purple-500 inline-block text-transparent bg-clip-text text-base">/</span>experience</span>
+        <span class="text-sm courier-prime-bold cursor-pointer"><span class="bg-gradient-to-tr from-indigo-500 to-purple-500 inline-block text-transparent bg-clip-text text-base">/</span>projects</span>
+    </div>
+    <div class="flex gap-2">
+        <i (click)="redirectToSocialMedia('git')" style="font-size: 1.1em;" class="pi pi-github cursor-pointer hover:scale-[1.15] transition-transform duration-100 ease-in"></i>
+        <i (click)="redirectToSocialMedia('linkedin')" style="font-size: 1.1em;" class="pi pi-linkedin cursor-pointer hover:scale-[1.15] transition-transform duration-100 ease-in"></i>
+        <i (click)="changeAppareanceMode()" [ngClass]="theme == 'dark' ? 'pi pi-sun': 'pi pi-moon'" style="font-size: 1.1em;" class="cursor-pointer bg-gradient-to-tr from-indigo-500 to-purple-500 inline-block text-transparent bg-clip-text hover:scale-[1.15] transition-transform duration-100 ease-in"></i>
+    </div>
+</div>
