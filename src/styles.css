@@ -1,4 +1,5 @@
 @import "primeicons/primeicons.css";
+@import "../public/fonts/google-fonts.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,14 +7,16 @@
 :root {
   --background-color: #f2f2f2;
   --text-color: #000000;
-  --card-bg-color: #e5e7eb; /* Light mode card color */
+  --card-bg-color: #e5e7eb;
+  --cursor-color: #000000;
 }
 
-/* Dark Mode */
+/* dark Mode */
 [data-theme="dark"] {
   --background-color: #180927;
   --text-color: #ffffff;
-  --card-bg-color: #12091c; /* Dark mode card color */
+  --card-bg-color: #12091c;
+  --cursor-color: #f2f2f2;
 }
 
 body {
@@ -21,124 +24,16 @@ body {
   color: var(--text-color);
 }
 
-/* Card styles */
 .my-card {
   background-color: var(--card-bg-color);
-  color: var(--text-color); /* Ensure text color adapts */
+  color: var(--text-color);
 }
 
-.suse-100 {
-  font-family: "SUSE", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
+.typed-cursor {
+  font-size: 82px;
+  color: var(--cursor-color);
 }
 
-.suse-200 {
-  font-family: "SUSE", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.suse-300 {
-  font-family: "SUSE", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.suse-400 {
-  font-family: "SUSE", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.suse-500 {
-  font-family: "SUSE", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.suse-600 {
-  font-family: "SUSE", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.suse-700 {
-  font-family: "SUSE", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.suse-800 {
-  font-family: "SUSE", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.zain-extralight {
-  font-family: "Zain", system-ui;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.zain-light {
-  font-family: "Zain", system-ui;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.zain-regular {
-  font-family: "Zain", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.zain-bold {
-  font-family: "Zain", system-ui;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.zain-extrabold {
-  font-family: "Zain", system-ui;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.zain-black {
-  font-family: "Zain", system-ui;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.courier-prime-regular {
-  font-family: "Courier Prime", monospace;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.courier-prime-bold {
-  font-family: "Courier Prime", monospace;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.courier-prime-regular-italic {
-  font-family: "Courier Prime", monospace;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.courier-prime-bold-italic {
-  font-family: "Courier Prime", monospace;
-  font-weight: 700;
-  font-style: italic;
+.faded-text {
+  @apply bg-gradient-to-tr from-indigo-500 to-purple-500 inline-block text-transparent bg-clip-text;
 }

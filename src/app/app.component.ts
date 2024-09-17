@@ -11,5 +11,5 @@ import { BodyComponent } from "./components/body/body.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'prueba';
+  title = 'portfolio';
 }
